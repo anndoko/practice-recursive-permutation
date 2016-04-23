@@ -3,7 +3,7 @@
 #include <string.h>
 using namespace std;
 
-char a[8];
+char a[6];
 int iterations = 0;
 
 /*------ swap -------*/
@@ -37,8 +37,8 @@ int perm (char *p, const int first, const int length){
 /*------ MAIN -------*/
 int main(){
     
-    strcpy(a,"ABC");
-    int n = perm(a, 0, 3);
+    strcpy(a,"ABCDEF");
+    int n = perm(a, 0, 6);
     cout<< "The number of permutations: " << n << endl; // the number of all possible permutations is length!
     
     return 0;
